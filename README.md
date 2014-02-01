@@ -20,7 +20,7 @@ Then, add it to your `gulpfile.js`:
 ```javascript
 var yuidoc = require("gulp-yuidoc");
 
-gulp.src("./src/*.hs")
+gulp.src("./src/*.js")
   .pipe(yuidoc.runner())
   .pipe(gulp.dest("./doc"));
 ```

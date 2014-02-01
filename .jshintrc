@@ -6,9 +6,10 @@
   "white": false, // "jslint can suck it"
 
   /******** Environment ********/
-  "browser": true,
+  "node": true,
+  "browser": false,
   "devel": false,
-  "jquery": true,
+  "jquery": false,
 
   /******** Enforceable setting we DONT use - CAREFUL WITH THAT, JOE ********/
   // Allow bitwise operators
@@ -95,7 +96,6 @@
   "sub": false,
   "validthis": false,
 
-  "node": true,
   "globals": {
   }
 }

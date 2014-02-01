@@ -4,7 +4,7 @@
 # Build systems
 dependencies
 node_modules
-.tmp
+coverage
 
 # IDE
 *.sublime-workspace
@@ -17,4 +17,4 @@ node_modules
 # Oldies
 *xxx*
 
-/sauce_connect.log
+/*.log

@@ -136,7 +136,6 @@
   "globals": {
   },
   "env":{
-    "browser": true,
     "node": true
   }
 }

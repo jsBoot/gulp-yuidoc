@@ -19,7 +19,7 @@
         "dist"
       ],
 
-      "file_exclude_patterns": ["*.sublime-workspace", "sauce_connect.log"]
+      "file_exclude_patterns": ["*.sublime-workspace", "*.log"]
     }
   ],
 

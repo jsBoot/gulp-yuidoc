@@ -1,0 +1,142 @@
+{
+  "rules": {
+    // Warn about variable used outside of their scoped block - well, don't! This is stupid
+    "block-scoped-var": 0,
+
+    // enforce one line brace style - unfortunately, will jump the gun on curly 0
+    "brace-style": 1,
+
+    // Camelcase shit
+    "camelcase": 1,
+    // Cyclomatic
+    "complexity": [1, 20],
+    // Disallow dereference (use bind people)
+    "consistent-this": [1, "this"],
+
+    // Allow dropping curly on one-liners
+    "curly": 0,
+    // Enforce the use of dot notation
+    "dot-notation": 1,
+    // Try to be smart with coerc
+    "eqeqeq": [1, "smart"],
+    // Declarations only
+    // "func-style": [2, "declaration"], // <- XXX CRASHING FOR NOW
+    // Protect against for in in objects
+    "guard-for-in": 1,
+    // Don't nest either
+    "max-depth": [1, 4],
+    // 100 chars, 2 indent
+    "max-len": [1, 120, 2],
+    // Don't nest!
+    // "max-nested-callbacks": [2, 3], // <- XXX CRASHING FOR NOW
+    // No huge params
+    "max-params": [1, 6],
+    // No long functions
+    "max-statements": [1, 40],
+    // disallow new shit(); allow new Shit();
+    "new-cap": 1,
+    // disallow new Shit; allow new Shit();
+    "new-parens": 2,
+    // Don't do that
+    "no-alert": 2,
+    // Grow-up!
+    "no-bitwise": 0,
+    // Strict
+    "no-caller": 2,
+    // No catch shadow (trigger IE8 bug)
+    "no-catch-shadow": 2,
+    // no {shit: 'shit',}0
+    "no-comma-dangle": 2,
+    // XXX Mixed feelings...
+    "no-cond-assign": 2,
+    // ...
+    "no-console": 2,
+    // Allow for anything in regexps!
+    "no-control-regex": 0,
+    // Interesting... use debugger; in code
+    "no-debugger": 2,
+    // You can't delete vars
+    "no-delete-var": 2,
+    // Enforce escaping of /=/ to /\=/
+    "no-div-regex": 1,
+    "no-dupe-keys": 2,
+    "no-else-return": 1,
+    "no-empty-class": 2,
+    // XXX wtf
+    "no-empty-label": 2,
+    "no-empty": 1,
+    "no-eq-null": 1,
+    "no-eval": 2,
+    // Disallow exception assignment
+    "no-ex-assign": 2,
+    // Reserved to shiming code
+    "no-extend-native": 2,
+    "no-extra-parens": 1,
+    "no-extra-semi": 1,
+    // "no-extra-strict": 1, // <- XXX CRASHING FOR NOW
+    "no-fallthrough": 1,
+    "no-floating-decimal": 1,
+    "no-func-assign": 2,
+    "no-global-strict": 1,
+    "no-implied-eval": 2,
+    "no-invalid-regexp": 2,
+    "no-iterator": 2,
+    "no-label-var": 2,
+    "no-loop-func": 1,
+    // not that useful browser land
+    "no-mixed-requires": 1,
+    "no-multi-str": 1,
+    "no-native-reassign": 2,
+    "no-negated-in-lhs": 2,
+    // "no-nested-ternary": 1, // <- XXX CRASHING FOR NOW
+    "no-new-array": 2,
+    "no-new-func": 2,
+    "no-new-object": 2,
+    "no-new-wrappers": 2,
+    "no-new": 2,
+    "no-obj-calls": 2,
+    "no-octal-escape": 2,
+    "no-octal": 1,
+    "no-plusplus": 0,
+    "no-proto": 2,
+    "no-redeclare": 1,
+    "no-return-assign": 1,
+    "no-script-url": 2,
+    "no-self-compare": 2,
+    "no-shadow-restricted-names": 2,
+    "no-shadow": 2,
+    "no-spaced-func": 1,
+    "no-sync": 1,
+    "no-ternary": 0,
+    "no-undef-init": 1,
+    "no-undef": 2,
+    "no-underscore-dangle": 1,
+    "no-unreachable": 1,
+    "no-unused-expressions": 1,
+    "no-unused-vars": 1,
+    "no-use-before-define": 2,
+    "no-with": 2,
+    "no-wrap-func": 1,
+    "one-var": 0,
+    // Might be worth investigating
+    "quote-props": 0,
+    "quotes": [2, "single"],
+    "radix": 1,
+    "regex-spaces": 1,
+    "semi": 1,
+    // "sort-vars": 1, // <- XXX CRASHING FOR NOW
+    // "space-infix-ops": 1, // <- XXX CRASHING FOR NOW
+    "space-return-throw-case": 1,
+    "space-unary-word-ops": 1,
+    "strict": 2,
+    "use-isnan": 1,
+    "wrap-iife": 1,
+    "wrap-regex": 0
+  },
+  "globals": {
+  },
+  "env":{
+    "browser": true,
+    "node": true
+  }
+}

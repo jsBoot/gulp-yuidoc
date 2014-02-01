@@ -1,0 +1,101 @@
+{
+  /******** Legacy options ********/
+  "nomen": false, // Allow dangling _ in variables XXX this one should be true
+  "onevar": false, // No kidding
+  "passfail": false, // Don't fail on each occurence
+  "white": false, // "jslint can suck it"
+
+  /******** Environment ********/
+  "browser": true,
+  "devel": false,
+  "jquery": true,
+
+  /******** Enforceable setting we DONT use - CAREFUL WITH THAT, JOE ********/
+  // Allow bitwise operators
+  "bitwise": false,
+  // DONT enforce systematic curly braces around blocks - this is tricky
+  "curly": false,
+  // DONT try to enforce use of === and !== - you need to deal with implicit coerce
+  "eqeqeq": false,
+  // Let us use ++ and -- operators
+  "plusplus": false,
+  // Indentation - XXX unfortunately, is terribly anal
+  // "indent": 2,
+
+
+  /******** Enforceable setting we DO use ********/
+  // Enforce camelCasing of props names
+  "camelcase": true,
+  // Warn about enumerations without hasOwnProperty calls
+  "forin": true,
+  // Enforce the use of parentheses around immediate function calls
+  "immed": true,
+  // Warn about late definition of local variables
+  "latedef": true,
+  // Requires capitalization of constructors
+  "newcap": true,
+  // Disallow callee on args - be ECMA strict ready
+  "noarg": true,
+  // Warn about empty blocks
+  "noempty": true,
+  // Warn about constructors missing a "new"
+  "nonew": true,
+  // String quoting style
+  "quotmark": "single",
+  // Warn about unsafe use of regexp
+  "regexp": true,
+  // Prohibit use of undeclared variables
+  "undef": true,
+  // Warn about unused variables
+  "unused": true,
+  // Use strict
+  "strict": true,
+  // Prohibit trailing whitespaces
+  "trailing": true,
+  // Maximum number of parameters in a function
+  "maxparams": 6,
+  // Maximum depth
+  "maxdepth": 4,
+  // Maximum number of statements in a block
+  "maxstatements": 40,
+  // Maximum function complexity
+  "maxcomplexity": 10,
+  // Maximum line length
+  "maxlen": 120,
+
+
+  /******** Relaxing options we DO use ********/
+  "supernew": true,  // allow to be weird
+  // "es5": true, // allow for getters / setters
+  "esnext": true, // allow for ES6 features
+
+  /******** Relaxing options we DONT use ********/
+  // Disallow semicolon elusion
+  "asi": false,
+  // Disallow pony assignments
+  "boss": false,
+  "debug": false,
+  "eqnull": false, // don't suppress warnings about null comparisons with ==
+  "evil": false, // no eval
+  "expr": false, // no expressions where assignments should take place
+  "funcscope": false, // don't allow out of scope declarations
+  "globalstrict": false, // stict should be in place
+  "iterator": false, // no need for __iterator__
+  "lastsemic": false, // asi bs
+  "laxbreak": false, // no lax
+  "laxcomma": false, // no lax
+  "loopfunc": false, // perf
+  "multistr": false, // readability
+  "onecase": false,
+  "proto": false,
+  "regexdash": false,
+  "scripturl": false,
+  "smarttabs": false,
+  "shadow": false,
+  "sub": false,
+  "validthis": false,
+
+  "node": true,
+  "globals": {
+  }
+}

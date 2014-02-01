@@ -47,7 +47,7 @@ The bla to embed into your docs.
 [travis-image]: https://secure.travis-ci.org/jsBoot/gulp-yuidoc.png?branch=master
 
 [coveralls-url]: https://coveralls.io/r/jsBoot/gulp-yuidoc
-[coveralls-image]: https://coveralls.io/repos/jsBoot/gulp-yuidoc/badge.png
+[coveralls-image]: https://coveralls.io/repos/jsBoot/gulp-yuidoc/badge.png?branch=master
 
 [depstat-url]: https://david-dm.org/jsBoot/gulp-yuidoc
 [depstat-image]: https://david-dm.org/jsBoot/gulp-yuidoc.png

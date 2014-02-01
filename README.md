@@ -43,11 +43,11 @@ The bla to embed into your docs.
 [npm-url]: https://npmjs.org/package/gulp-yuidoc
 [npm-image]: https://badge.fury.io/js/gulp-yuidoc.png
 
-[travis-url]: http://travis-ci.org/dmp42/gulp-yuidoc
-[travis-image]: https://secure.travis-ci.org/dmp42/gulp-yuidoc.png?branch=master
+[travis-url]: http://travis-ci.org/jsBoot/gulp-yuidoc
+[travis-image]: https://secure.travis-ci.org/jsBoot/gulp-yuidoc.png?branch=master
 
-[coveralls-url]: https://coveralls.io/r/dmp42/gulp-yuidoc
-[coveralls-image]: https://coveralls.io/repos/dmp42/gulp-yuidoc/badge.png
+[coveralls-url]: https://coveralls.io/r/jsBoot/gulp-yuidoc
+[coveralls-image]: https://coveralls.io/repos/jsBoot/gulp-yuidoc/badge.png
 
-[depstat-url]: https://david-dm.org/dmp42/gulp-yuidoc
-[depstat-image]: https://david-dm.org/dmp42/gulp-yuidoc.png
+[depstat-url]: https://david-dm.org/jsBoot/gulp-yuidoc
+[depstat-image]: https://david-dm.org/jsBoot/gulp-yuidoc.png

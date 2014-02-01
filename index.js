@@ -181,6 +181,10 @@
     )();
   };
 
+  // Listening on uncaughtException is plain bad - deny YUI the right to do so
+  // https://github.com/joyent/node/issues/2582
+  process.removeAllListeners('uncaughtException');
+
   module.exports = yuidoc;
 
 }());

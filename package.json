@@ -26,25 +26,25 @@
     "coveralls": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
   },
   "dependencies": {
-    "through2": "*",
+    "through2": "0.4.1",
     "gulp-util": "~2.2.0",
     "yuidocjs": "~0.3.47",
     "chalk": "~0.4.0",
     "text-table": "~0.2.0",
-    "vinyl-fs": "0.0.1"
+    "vinyl-fs": "0.0.2"
   },
   "devDependencies": {
-    "mocha": "*",
-    "coveralls": "*",
-    "mocha-lcov-reporter": "*",
-    "istanbul": "*",
-    "event-stream": "*",
-    "should": "~2.1.0",
+    "mocha": "1.17.1",
+    "coveralls": "~2.7.0",
+    "mocha-lcov-reporter": "~0.0.1",
+    "istanbul": "0.2.4",
+    "event-stream": "~3.1.0",
+    "should": "~3.1.2",
     "eslint": "~0.3.0",
     "jshint": "~2.4.3"
   },
   "engines": {
-    "node": ">=0.8.0",
+    "node": ">=0.10.0",
     "npm": ">=1.2.10"
   },
   "licenses": [

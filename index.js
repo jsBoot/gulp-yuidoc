@@ -37,6 +37,12 @@
     };
 
     var endStream = function(conclude){
+      // Nothing? Exit right away
+      if (!firstFile){
+        conclude();
+        return;
+      }
+
       var data;
       try{
         data = JSON.stringify(wp.complete());

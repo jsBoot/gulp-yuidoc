@@ -59,7 +59,7 @@ describe("gulp-yuidoc", function () {
       contents: fs.createReadStream("test/fixtures/hello.txt")
     });
 
-    var stream = yuidoc.runner();
+    var stream = yuidoc();
 
     stream.on("error", function(err) {
       should.exist(err);

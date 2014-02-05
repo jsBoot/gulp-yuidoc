@@ -5,11 +5,11 @@
 
 ## WARNING
 
-Early release, likely buggy, use caution.
+This is an early release, and you will likely encounter bugs or limitations.
 
-## Usage
+## TL;DR
 
-First, install `gulp-yuidoc` as a development dependency:
+Install `gulp-yuidoc` as a development dependency:
 
 ```shell
 npm install --save-dev gulp-yuidoc
@@ -21,19 +21,69 @@ Then, add it to your `gulpfile.js`:
 var yuidoc = require("gulp-yuidoc");
 
 gulp.src("./src/*.js")
-  .pipe(yuidoc.runner())
+  .pipe(yuidoc())
   .pipe(gulp.dest("./doc"));
 ```
 
 ## API
 
-### yuidoc(options)
+### yuidoc.parser(options, name)
 
-#### options.bla
-Type: `String`  
-Default: ``
+Calling the parser alone will build a vinyl containing the parsing result of fed files.
+By default, that vinyl will get named "yuidoc.json", unless you override it with the optional "name" argument.
 
-The bla to embed into your docs.
+"options" allows you to speficy yuidoc parsing options (XXX untested).
+
+```javascript
+gulp.src("./src/*.js")
+  .pipe(yuidoc.parser())
+  .pipe(gulp.dest("./jsondocoutput"));
+```
+
+### yuidoc.reporter()
+
+Reports whatever went wrong with parsing.
+
+```javascript
+gulp.src("./src/*.js")
+  .pipe(yuidoc.parser())
+  .pipe(yuidoc.reporter())
+```
+
+If you prefer ugly things, call `yiudoc.yuiReporter()` instead (default reporter, which is beautiful, is "stylish", stolen from sindresorhus).
+
+### yuidoc.generator(options)
+
+Generates documentation from the result of the parser.
+
+```javascript
+gulp.src("./src/*.js")
+  .pipe(yuidoc.parser())
+  .pipe(yuidoc.generator())
+  .pipe(gulp.dest('./documentation-output'))
+```
+
+You may pass yuidoc generator options optionally (XXX untested - undocumented).
+
+### yuidoc(parseOpts, renderOpts)
+
+This:
+
+```javascript
+gulp.src("./src/*.js")
+  .pipe(yuidoc())
+  .pipe(gulp.dest('./documentation-output'))
+```
+
+is a shortcut for:
+
+```javascript
+gulp.src("./src/*.js")
+  .pipe(yuidoc.parser())
+  .pipe(yuidoc.reporter())
+  .pipe(yuidoc.generator())
+  .pipe(gulp.dest('./documentation-output'))
+```
 
 
 ## License

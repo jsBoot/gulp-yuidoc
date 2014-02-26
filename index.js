@@ -71,14 +71,15 @@
   var streamGenerator = function(options){
     options = options || {};
     var gp = new Generator(options);
+    var tdir = options.themedir || path.join(__dirname, 'node_modules', 'yuidocjs', 'themes', 'default')
 
     var processor = function(file, enc, next){
       if (file.isNull()) return; // ignore
       if (file.isStream()) return this.emit('error', new PluginError('gulp-jsdoc',  'Streaming not supported'));
 
 
-      // Globs the assets from the default theme
-      var theme = path.join(__dirname, 'node_modules', 'yuidocjs', 'themes', 'default');
+      // Globs the assets from the theme
+      var theme = tdir;
       var opt = {cwd: theme};
       var defaultheme = './assets/**/*';
 

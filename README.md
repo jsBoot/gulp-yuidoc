@@ -1,3 +1,9 @@
+# Fork notes
+This fork adds support for passing in an options object. Options object contains "ignoreTags"
+array which tells YUIDoc to ignore certain @ tags. Also requires forked version of YUIDoc
+available at https://github.com/Netflix-Skunkworks/yuidoc.
+
+
 # gulp-yuidoc
 [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url]  [![Coverage Status][coveralls-image]][coveralls-url] [![Dependency Status][depstat-image]][depstat-url]
 

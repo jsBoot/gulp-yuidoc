@@ -3,6 +3,8 @@ This fork adds support for passing in an options object. Options object contains
 array which tells YUIDoc to ignore certain @ tags. Also requires forked version of YUIDoc
 available at https://github.com/Netflix-Skunkworks/yuidoc.
 
+This version also adds a yuidoc.success flag onto the stream for use in error reporting. This can be consumed by error reports later in the stream, e.g., commit hook.
+
 
 # gulp-yuidoc
 [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url]  [![Coverage Status][coveralls-image]][coveralls-url] [![Dependency Status][depstat-image]][depstat-url]

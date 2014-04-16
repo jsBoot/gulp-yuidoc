@@ -1,7 +1,7 @@
 gulp-yuidoc
 ===========
 
-![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url]  [![Coverage Status][coveralls-image]][coveralls-url] [![Dependency Status][depstat-image]][depstat-url] [![Code Climate][codeclimate-image]][codeclimate-url]
+[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url]  [![Coverage Status][coveralls-image]][coveralls-url] [![Dependency Status][depstat-image]][depstat-url] [![Code Climate][codeclimate-image]][codeclimate-url]
 
 > [yuidoc](https://github.com/yui/yuidoc) plugin for [gulp](https://github.com/wearefractal/gulp)
 

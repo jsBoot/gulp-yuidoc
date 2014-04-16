@@ -1,13 +1,17 @@
-# gulp-yuidoc
-[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url]  [![Coverage Status][coveralls-image]][coveralls-url] [![Dependency Status][depstat-image]][depstat-url]
+gulp-yuidoc
+===========
+
+![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url]  [![Coverage Status][coveralls-image]][coveralls-url] [![Dependency Status][depstat-image]][depstat-url] [![Code Climate][codeclimate-image]][codeclimate-url]
 
 > [yuidoc](https://github.com/yui/yuidoc) plugin for [gulp](https://github.com/wearefractal/gulp)
 
-## WARNING
+WARNING
+-------------
 
 This is an early release, and you will likely encounter bugs or limitations.
 
-## TL;DR
+TL;DR
+-------------
 
 Install `gulp-yuidoc` as a development dependency:
 
@@ -101,3 +105,6 @@ gulp.src("./src/*.js")
 
 [depstat-url]: https://david-dm.org/jsBoot/gulp-yuidoc
 [depstat-image]: https://david-dm.org/jsBoot/gulp-yuidoc.png
+
+[codeclimate-url]: https://codeclimate.com/github/jsBoot/gulp-yuidoc.js
+[codeclimate-image]: https://codeclimate.com/github/jsBoot/gulp-yuidoc.png

@@ -89,6 +89,21 @@ gulp.src("./src/*.js")
   .pipe(gulp.dest('./documentation-output'))
 ```
 
+## Configuration
+To add project-level configuration, such as version and project name, add them to a
+`project` key in the options given to the parser. Example:
+
+```javascript
+.pipe(yuidoc({
+   project: {
+    "name": "The Foo API",
+    "description": "The Foo API: a library for doing X, Y, and Z",
+    "version": "1.2.0",
+    "url": "http://example.com/"
+   }
+ }))
+```
+
 
 ## License
 

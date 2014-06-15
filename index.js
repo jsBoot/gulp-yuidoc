@@ -86,14 +86,18 @@
       try{
         gp.render(file, function(result){
           // Get the path/content pairs and spoof them into the stream
+          // FORK NOTES: put the parser success flag onto the file so it can be consumed 
+          // later down the stream.
           Object.keys(result).forEach(function(f){
-            var p = path.resolve(file.cwd, f);
-            this.push(new File({
-              cwd: file.cwd,
-              base: file.cwd,
-              path: p,
-              contents: new Buffer(result[f])
-            }));
+            var p = path.resolve(file.cwd, f),
+                myFile = new File({
+                  cwd: file.cwd,
+                  base: file.cwd,
+                  path: p,
+                  contents: new Buffer(result[f])
+                });
+            myFile.yuidoc = file.yuidoc;
+            this.push(myFile);
           }.bind(this));
 
           // Get the theme and spoof it into us stream
@@ -126,11 +130,18 @@
         var warnings = JSON.parse(file.contents.toString('utf8')).warnings;
         if(warnings && warnings.length){
           // Don't trust the (yahoo) reporter too much
+          file.yuidoc = {
+            success:  false
+          };
           try{
             reporter(warnings, options);
           }catch(e){
             return this.emit('error', new PluginError('gulp-yuidoc', 'Reporter crashed!' + e));
           }
+        } else {
+          file.yuidoc = {
+            success:  true
+          };
         }
         this.push(file);
         next();

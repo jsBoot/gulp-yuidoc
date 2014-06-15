@@ -33,7 +33,7 @@
   "dependencies": {
     "through2": "0.4.1",
     "gulp-util": "~2.2.0",
-    "yuidocjs": "~0.3.47",
+    "yuidocjs": "git+https://git@github.com/Netflix-Skunkworks/yuidoc.git#ignoretags",
     "chalk": "~0.4.0",
     "text-table": "~0.2.0",
     "vinyl-fs": "~0.1.2"

@@ -7,15 +7,17 @@ This version also adds a yuidoc.success flag onto the stream for use in error re
 
 
 # gulp-yuidoc
-[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url]  [![Coverage Status][coveralls-image]][coveralls-url] [![Dependency Status][depstat-image]][depstat-url]
+[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url]  [![Coverage Status][coveralls-image]][coveralls-url] [![Dependency Status][depstat-image]][depstat-url] [![Code Climate][codeclimate-image]][codeclimate-url]
 
 > [yuidoc](https://github.com/yui/yuidoc) plugin for [gulp](https://github.com/wearefractal/gulp)
 
-## WARNING
+WARNING
+-------------
 
 This is an early release, and you will likely encounter bugs or limitations.
 
-## TL;DR
+TL;DR
+-------------
 
 Install `gulp-yuidoc` as a development dependency:
 
@@ -93,6 +95,21 @@ gulp.src("./src/*.js")
   .pipe(gulp.dest('./documentation-output'))
 ```
 
+## Configuration
+To add project-level configuration, such as version and project name, add them to a
+`project` key in the options given to the parser. Example:
+
+```javascript
+.pipe(yuidoc({
+   project: {
+    "name": "The Foo API",
+    "description": "The Foo API: a library for doing X, Y, and Z",
+    "version": "1.2.0",
+    "url": "http://example.com/"
+   }
+ }))
+```
+
 
 ## License
 
@@ -109,3 +126,6 @@ gulp.src("./src/*.js")
 
 [depstat-url]: https://david-dm.org/jsBoot/gulp-yuidoc
 [depstat-image]: https://david-dm.org/jsBoot/gulp-yuidoc.png
+
+[codeclimate-url]: https://codeclimate.com/github/jsBoot/gulp-yuidoc.js
+[codeclimate-image]: https://codeclimate.com/github/jsBoot/gulp-yuidoc.png

@@ -21,6 +21,8 @@
 
     var firstFile = null;
 
+    var spaces = options && options.spaces ? options.spaces : 0;
+
     var wp = new Parser(options);
 
     var bufferFiles = function(file, enc, next){
@@ -45,7 +47,7 @@
 
       var data;
       try{
-        data = JSON.stringify(wp.complete());
+        data = JSON.stringify(wp.complete(), null, spaces);
         // data = parser(options, filemap));
       }catch(e){
         return this.emit('error', new PluginError('gulp-jsdoc',
